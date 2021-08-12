@@ -1,0 +1,459 @@
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+
+    &__logo {
+        padding: 1rem 0 0 1rem;
+
+        &--img {
+            width: 10rem;
+        }
+    }
+
+    &__social {
+        align-self: stretch;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__links {
+        display: flex;   
+    }
+
+    &__item {
+        list-style: none;
+        cursor: pointer;
+        fill: white;
+        margin-right: 2rem;
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        
+
+        &--image {
+            align-self: stretch;
+            display: flex;
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+    &__menu {
+        background-color: orange;
+        padding: 0 1.25rem;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--bar {
+            height: 2rem;
+            width: 3rem;
+        }
+    }
+}
+
+.download {
+    background-image: url(../images/main_bg_m1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 70rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__text {
+        margin-top: 8.5rem;
+        text-transform: uppercase;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-size: 4.7rem;
+        font-weight: 700;
+        text-align: center;
+        text-shadow: 0 .3rem .5rem rgba(0,0,0, .4);
+
+        &--span {
+            position: absolute;
+            top: 13rem;
+            align-self: center;
+        }
+    }
+
+    &__btn--links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__btn {
+        font-family:'Teko', 'Oswald', sans-serif;
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        text-transform: uppercase;
+
+        font-weight: 600;
+        font-size: 2rem;
+        color: rgb(32, 32, 32);
+
+        background-image: linear-gradient(yellow, orange);
+        padding: .5rem 2rem;
+        border: yellow 1px solid;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    &__launch-link {
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 200;
+        margin-bottom: 5rem;
+    }
+}
+
+
+///////EVENT PART
+
+.event {
+    background-image: url(../images/item_bg.jpg);
+    height: 80rem;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+
+    &__text {
+        font-size: 3.5rem;
+
+        &--one {
+            padding-top: 8rem;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: rgb(255, 180, 42);
+        }
+
+        &--two {
+            margin-top: -1rem;
+            text-transform: uppercase;
+            color: yellow;
+        }
+
+        &--three {
+            margin-top: -1rem;
+            font-weight: 300;
+        }
+    }
+
+    &__rewards {
+        margin-top: 3rem;
+        height: 50%;
+        width: 100%;
+    }
+
+
+}
+
+//////////////////////////// NEWS
+.news {
+    background-image: url(../images/news_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    &__text { //temp
+        padding: 3rem 0 0 0;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 600;
+        color: #333;
+        letter-spacing: 0.5px;
+        font-family: 'Teko', sans-serif;
+    }
+
+    &__card {
+        margin: 2rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        &--image {
+            height: 100%;
+            width: 100%;
+        }
+
+        &--text {
+            padding-left: 2rem;
+            color: #999;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+
+            &:last-child {
+                padding-bottom: 1rem;
+            }
+        }
+
+        &--event {
+            padding-left: 2rem;
+            font-size: 2rem;
+        }
+    }
+
+    &__btn-viewmore{
+        display: flex;
+        
+    }
+
+    &__btn-view {
+        margin: .5rem auto 4rem auto;
+
+        color: #666;
+        background-color: transparent;
+        padding: .7rem 4rem;
+        border: none;
+        border: #666 solid 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Teko', sans-serif;
+        font-size: 2rem;
+        letter-spacing: .1rem;
+    }
+}
+
+/////////////////SOCIAL MEDIA
+.Social-media {
+    background-image: url(../images/news_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__logo-box {
+        background-color: black;
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__logo-img {
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: white;
+    }
+
+    &__text { //temp
+        padding: 3rem 0 0 0;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 600;
+        color: #333;
+        letter-spacing: 0.5px;
+        font-family: 'Teko', sans-serif;
+    }
+
+    &__card {
+        margin: 2rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        &--image {
+            height: 100%;
+            width: 100%;
+        }
+
+        &--text {
+            padding-left: 2rem;
+            color: #999;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+
+            &:last-child {
+                padding-bottom: 1rem;
+            }
+        }
+
+        &--description {
+            margin-top: 2rem;
+            font-size: .8rem;
+            padding-left: 2rem;
+            font-size: 2rem;
+            color: #666;
+        }
+    }
+}
+
+///////////////// PARTNER
+.partner {
+    background-image: url(../images/video_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 4rem;
+
+    &__text { //temp
+        padding: 3rem 0 0 0;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 550;
+        color: #fff;
+        letter-spacing: 0.5px;
+        font-family: 'Teko', sans-serif;
+    }
+
+    &__card {
+        margin: 2rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        &--image {
+            height: 100%;
+            width: 100%;
+        }
+
+        &--text {
+            padding-left: 2rem;
+            color: #999;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+
+            &:last-child {
+                padding-bottom: 1rem;
+            }
+        }
+
+        &--description {
+            margin-top: 2rem;
+            font-size: .8rem;
+            padding-left: 2rem;
+            font-size: 2rem;
+            color: rgb(70, 70, 70);
+        }
+    }
+}
+
+.list-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+///////////////// download-now
+.download-now {
+    background-image: url(../images/app_bg.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(5px);
+
+    &__logo {
+        padding: 3.5rem 0 2.5rem 0;
+    }
+
+    &__text {
+        color: #fff;
+        width: 80%;
+        text-align: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 2.5rem;
+    }
+
+    &__playstore-link {
+        padding: 2rem 0 4rem 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__playstore-logo {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/////////////// FOOTER
+.footer {
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem 0;
+
+    &__logo {
+        padding: 0 0 1rem 0;
+        width: 40%;
+    }
+
+    &__copyright {
+        color: #666;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        width: 50%;
+    }
+
+    &__list-items {
+        color: #666;
+        font-size: 1.5rem;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+        }
+    }
+}
+
+.item-1 {
+    margin-right: auto;
+}
+
+.item-2 {
+    margin-left: auto;
+}

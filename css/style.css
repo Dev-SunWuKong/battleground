@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 31.25em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  body {
+    font-family: 'Teko', 'Oswald', sans-serif;
+    font-weight: 400;
+  }
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  z-index: 10;
+}
+
+.navigation__logo {
+  padding: 1rem 0 0 1rem;
+}
+
+.navigation__logo--img {
+  width: 10rem;
+}
+
+.navigation__social {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation__links {
+  display: flex;
+}
+
+.navigation__item {
+  list-style: none;
+  cursor: pointer;
+  fill: white;
+  margin-right: 2rem;
+  transition: all .2s;
+}
+
+.navigation__item:hover {
+  transform: scale(1.1);
+}
+
+.navigation__item--image {
+  align-self: stretch;
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+}
+
+.navigation__menu {
+  background-color: orange;
+  padding: 0 1.25rem;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation__menu--bar {
+  height: 2rem;
+  width: 3rem;
+}
+
+.download {
+  background-image: url(../images/main_bg_m1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.download__text {
+  margin-top: 8.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 4.7rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.download__text--span {
+  position: absolute;
+  top: 13rem;
+  align-self: center;
+}
+
+.download__btn--links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.download__btn {
+  font-family: 'Teko', 'Oswald', sans-serif;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #202020;
+  background-image: linear-gradient(yellow, orange);
+  padding: .5rem 2rem;
+  border: yellow 1px solid;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.download__launch-link {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 5rem;
+}
+
+.event {
+  background-image: url(../images/item_bg.jpg);
+  height: 80rem;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.event__text {
+  font-size: 3.5rem;
+}
+
+.event__text--one {
+  padding-top: 8rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ffb42a;
+}
+
+.event__text--two {
+  margin-top: -1rem;
+  text-transform: uppercase;
+  color: yellow;
+}
+
+.event__text--three {
+  margin-top: -1rem;
+  font-weight: 300;
+}
+
+.event__rewards {
+  margin-top: 3rem;
+  height: 50%;
+  width: 100%;
+}
+
+.news {
+  background-image: url(../images/news_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.news__text {
+  padding: 3rem 0 0 0;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.5px;
+  font-family: 'Teko', sans-serif;
+}
+
+.news__card {
+  margin: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.news__card--image {
+  height: 100%;
+  width: 100%;
+}
+
+.news__card--text {
+  padding-left: 2rem;
+  color: #999;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.news__card--text:last-child {
+  padding-bottom: 1rem;
+}
+
+.news__card--event {
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+
+.news__btn-viewmore {
+  display: flex;
+}
+
+.news__btn-view {
+  margin: .5rem auto 4rem auto;
+  color: #666;
+  background-color: transparent;
+  padding: .7rem 4rem;
+  border: none;
+  border: #666 solid 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Teko', sans-serif;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+}
+
+.Social-media {
+  background-image: url(../images/news_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.Social-media__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Social-media__logo-box {
+  background-color: black;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Social-media__logo-box:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.Social-media__logo-img {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: white;
+}
+
+.Social-media__text {
+  padding: 3rem 0 0 0;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.5px;
+  font-family: 'Teko', sans-serif;
+}
+
+.Social-media__card {
+  margin: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.Social-media__card--image {
+  height: 100%;
+  width: 100%;
+}
+
+.Social-media__card--text {
+  padding-left: 2rem;
+  color: #999;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.Social-media__card--text:last-child {
+  padding-bottom: 1rem;
+}
+
+.Social-media__card--description {
+  margin-top: 2rem;
+  font-size: .8rem;
+  padding-left: 2rem;
+  font-size: 2rem;
+  color: #666;
+}
+
+.partner {
+  background-image: url(../images/video_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-bottom: 4rem;
+}
+
+.partner__text {
+  padding: 3rem 0 0 0;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 550;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-family: 'Teko', sans-serif;
+}
+
+.partner__card {
+  margin: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.partner__card--image {
+  height: 100%;
+  width: 100%;
+}
+
+.partner__card--text {
+  padding-left: 2rem;
+  color: #999;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.partner__card--text:last-child {
+  padding-bottom: 1rem;
+}
+
+.partner__card--description {
+  margin-top: 2rem;
+  font-size: .8rem;
+  padding-left: 2rem;
+  font-size: 2rem;
+  color: #464646;
+}
+
+.list-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.download-now {
+  background-image: url(../images/app_bg.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.download-now__logo {
+  padding: 3.5rem 0 2.5rem 0;
+}
+
+.download-now__text {
+  color: #fff;
+  width: 80%;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.download-now__playstore-link {
+  padding: 2rem 0 4rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.download-now__playstore-logo {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.footer__logo {
+  padding: 0 0 1rem 0;
+  width: 40%;
+}
+
+.footer__copyright {
+  color: #666;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.footer__list-items {
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.footer__list-items:hover, .footer__list-items:focus, .footer__list-items:active {
+  color: #fff;
+}
+
+.item-1 {
+  margin-right: auto;
+}
+
+.item-2 {
+  margin-left: auto;
+}
+/*# sourceMappingURL=style.css.map */

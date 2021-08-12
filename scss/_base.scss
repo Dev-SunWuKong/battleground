@@ -1,0 +1,23 @@
+$bp-small: 31.25em; //500px
+$bp-smallest: 25em; //400px
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    @media only screen and (max-width: $bp-smallest) {
+        font-family: 'Teko', 'Oswald', sans-serif;
+        font-weight: 400;
+    }
+}
+
